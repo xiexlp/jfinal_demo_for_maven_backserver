@@ -1,0 +1,104 @@
+#include("/boot/common/boot_nav.html")
+
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        currencyStatusadd 新增
+    </div>
+    <div class="panel-body">
+<!-- addform 用于增加 -->
+<form action="/boot/currencyStatus/currencyStatusadd" method="post" id="addCurrencyStatusForm" name="addCurrencyStatusForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+        
+                            <div class="form-group">
+                    <label for="currencyStatusId" class="control-label col-lg-3">currencyStatusId</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="currencyStatusId" name="currencyStatusId" class="form-control" readonly>
+                    </div>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="posPanelNum" class="control-label col-lg-3">posPanelNum</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="posPanelNum" name="posPanelNum" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(posPanelNumInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="pricePanelNum" class="control-label col-lg-3">pricePanelNum</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="pricePanelNum" name="pricePanelNum" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(pricePanelNumInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="posLastBatchTime" class="control-label col-lg-3">posLastBatchTime</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="posLastBatchTime" name="posLastBatchTime" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(posLastBatchTimeInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="priceLastBatchTime" class="control-label col-lg-3">priceLastBatchTime</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="priceLastBatchTime" name="priceLastBatchTime" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(priceLastBatchTimeInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="createTime" class="control-label col-lg-3">createTime</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="createTime" name="createTime" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(createTimeInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="updateTime" class="control-label col-lg-3">updateTime</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="updateTime" name="updateTime" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(updateTimeInfo)</label>
+                </div>
+            
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-6">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <div class="panel-footer">
+        panel-footer
+    </div>
+</div>
+</div>
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyStatusAddEditValidator.js"></script>
+
+
+
+
+

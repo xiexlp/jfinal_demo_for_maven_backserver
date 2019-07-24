@@ -1,0 +1,22 @@
+<ul class="pagination" style="padding-top: 0px;margin-top: 0px;">
+    <!--#  if(pageNo>1){
+            var pre = pageNo-1;
+        -->
+    <li class="arrow btn-sm"><a href="${actionUrl}&pageNo=${pre}">上一页</a></li>
+    <!--# } -->
+    <!--# for(no in pageNoList){ -->
+        <!--# if(no==pageNo){ -->
+            <li class="active"><a href="${actionUrl}&pageNo=${no}" class="btn-sm">${no}</a></li>
+        <!--# }else{ -->
+            <li><a href="${actionUrl}&pageNo=${no}" class="btn-sm">${no}</a></li>
+        <!--# } -->
+        <!--# } -->
+        <!--# if(pageNo<pageTotal){
+            var next = pageNo+1;
+        -->
+        <li class="arrow btn-sm"><a href="${actionUrl}&pageNo=${next}">下一页</a></li>
+    <!--# } -->
+    <li><span class="btn-sm btn-primary">总页数:${pageTotal}</span></li>
+    <li><span class="btn-sm btn-primary">当前页:${pageNo}</span></li>
+    <li><span class="btn-sm btn-primary">总帖数:${total}</span></li>
+</ul>

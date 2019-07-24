@@ -1,0 +1,64 @@
+#include("/boot/common/boot_nav.html")
+
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        currencyPosScrawLogadd 新增
+    </div>
+    <div class="panel-body">
+<!-- addform 用于增加 -->
+<form action="/boot/currencyPosScrawLog/currencyPosScrawLogadd" method="post" id="addCurrencyPosScrawLogForm" name="addCurrencyPosScrawLogForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+        
+                            <div class="form-group">
+                    <label for="currencyPosScrawLogId" class="control-label col-lg-3">currencyPosScrawLogId</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="currencyPosScrawLogId" name="currencyPosScrawLogId" class="form-control" readonly>
+                    </div>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="posBatchTime" class="control-label col-lg-3">posBatchTime</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="posBatchTime" name="posBatchTime" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(posBatchTimeInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="posBatchNum" class="control-label col-lg-3">posBatchNum</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="posBatchNum" name="posBatchNum" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(posBatchNumInfo)</label>
+                </div>
+            
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-6">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <div class="panel-footer">
+        panel-footer
+    </div>
+</div>
+</div>
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyPosScrawLogAddEditValidator.js"></script>
+
+
+
+
+

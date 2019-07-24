@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>厂商增加</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/jss/css/main.css"/>
+    <script src="/js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+
+<!-- editform 用于编辑 -->
+<form action="/doc/docupdate" method="post" name="editDocForm">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="docId" class="control-label col-lg-1">docId</label>
+            <div class="col-lg-3">
+                <input type="text" id="docId" readonly name="docId" class="form-control" value="#(doc.docId)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="title" class="control-label col-lg-1">title</label>
+            <div class="col-lg-3">
+                <input type="text" id="title" name="title" class="form-control" value="#(doc.title)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="titleSize" class="control-label col-lg-1">titleSize</label>
+            <div class="col-lg-3">
+                <input type="text" id="titleSize" name="titleSize" class="form-control" value="#(doc.titleSize)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="body" class="control-label col-lg-1">body</label>
+            <div class="col-lg-3">
+                <textarea type="text" id="body" name="body" class="form-control" >
+                    #(doc.body)
+                </textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bodySize" class="control-label col-lg-1">bodySize</label>
+            <div class="col-lg-3">
+                <input type="text" id="bodySize" name="bodySize" class="form-control" value="#(doc.bodySize)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tablename" class="control-label col-lg-1">tablename</label>
+            <div class="col-lg-3">
+                <input type="text" id="tablename" name="tablename" class="form-control" value="#(doc.tablename)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dbname" class="control-label col-lg-1">dbname</label>
+            <div class="col-lg-3">
+                <input type="text" id="dbname" name="dbname" class="form-control" value="#(doc.dbname)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fieldname" class="control-label col-lg-1">fieldname</label>
+            <div class="col-lg-3">
+                <input type="text" id="fieldname" name="fieldname" class="form-control" value="#(doc.fieldname)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fieldId" class="control-label col-lg-1">fieldId</label>
+            <div class="col-lg-3">
+                <input type="text" id="fieldId" name="fieldId" class="form-control" value="#(doc.fieldId)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="url" class="control-label col-lg-1">url</label>
+            <div class="col-lg-3">
+                <input type="text" id="url" name="url" class="form-control" value="#(doc.url)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="host" class="control-label col-lg-1">host</label>
+            <div class="col-lg-3">
+                <input type="text" id="host" name="host" class="form-control" value="#(doc.host)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="createTime" class="control-label col-lg-1">createTime</label>
+            <div class="col-lg-3">
+                <input type="text" id="createTime" name="createTime" class="form-control" value="#(doc.createTime)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="updateTime" class="control-label col-lg-1">updateTime</label>
+            <div class="col-lg-3">
+                <input type="text" id="updateTime" name="updateTime" class="form-control" value="#(doc.updateTime)">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="indexStatus" class="control-label col-lg-1">indexStatus</label>
+            <div class="col-lg-3">
+                <textarea type="text" id="indexStatus" name="indexStatus" class="form-control">
+                    #(doc.indexStatus)
+                </textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="indexStage" class="control-label col-lg-1">indexStage</label>
+            <div class="col-lg-3">
+                <input type="text" id="indexStage" name="indexStage" class="form-control" value="#(doc.indexStage)">
+            </div>
+        </div>
+        <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-1"></label>
+            <div class="col-lg-3">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
+
+
+

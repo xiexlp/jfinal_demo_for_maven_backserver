@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+
+    <script>
+        //alert(1);
+    </script>
+</head>
+<body>
+
+
+#include("../common/header-common.html")
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+                            文件列表:
+                            #include("../common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                            <form action="/boot/postings/search" method="post">
+                            <div class="input-group">
+                                <input type="text" name="query" class="form-control" placeholder="请输入关键字"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">搜索</button>
+                                </span>
+
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="padding: 0 0 10px 0">
+                        <div class="col-lg-1">
+                            <a href="/boot/doc/index?fieldname=doc_id&sort=#{(sort+1)%2}">docId</a>
+                            #if(fieldname=="doc_id")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+                        </div>
+                        <div class="col-lg-2">
+                            title
+                        </div>
+
+                        <div class="col-lg-2">
+                            是否已经索引
+                        </div>
+
+                        <div class="col-lg-1">
+                            tablename
+                        </div>
+
+                        <div class="col-lg-1">
+                            <a href="/boot/doc/index?fieldname=create_time&sort=#((sort+1)%2)">createTime</a>
+                            #if(fieldname=="create_time")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+                        </div>
+
+                        <div class="col-lg-1">
+                            indexStage
+                        </div>
+
+                        <div class="col-lg-1">
+                            fieldname
+                        </div>
+                        <div class="col-lg-3">
+                            属性名
+                        </div>
+                    </div>
+                    <hr/>
+                    #for(x:docList)
+                    <div class="row" style="padding: 5px 0 0 0;">
+                        <div class="col-lg-1">
+                            #(x.docId)
+                        </div>
+
+                        <div class="col-lg-2">
+                            #(x.title)
+                        </div>
+
+                        <div class="col-lg-2">
+                           索引状态: #(x.indexStatus)
+                        </div>
+
+                        <div class="col-lg-1">
+                            #(x.tablename)
+                        </div>
+
+                        <div class="col-lg-1">
+                            #(x.createTimeFormat)
+                        </div>
+                        <div class="col-lg-1">
+                            #if(x.indexStage==0)
+                            <label class="label label-danger">未索引</label>
+                            #else if(x.indexStage==1)
+                            <label class="label label-warning">部分索引</label>
+                            #else if(x.indexStage==2)
+                            <label class="label label-success">已索引</label>
+                            #end
+
+                        </div>
+                        <div class="col-lg-1">
+                            #(x.fieldname)
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="/boot/doc/docupdate?docId=#(x.docId)" class="btn btn-primary btn-sm">修改</a>
+                            <a href="/boot/doc/docdetail?docId=#(x.docId)" class="btn btn-primary btn-sm">详情</a>
+                            <a href="/boot/postings/list?docId=#(x.docId)" class="btn btn-primary btn-sm">查看索引</a>
+                        </div>
+                    </div>
+                    #end
+                </div>
+                <div class="panel-footer">
+
+                    
+                <div class="btn-group">
+                        <a href="/boot/doc/updateindexstage" class="btn btn-primary">更新全表索引状态(慎用),在初始化时候使用,一般不使用</a>
+                        <a href="/boot/doc/indexalldoc" class="btn btn-primary">一次索引为被索引的文档</a>
+                        <a href="/boot/doc/docmove" class="btn btn-primary">文档从原库迁移到新库的doc表格</a>
+                        <a href="/boot/doc/indexdocbat" class="btn btn-primary">对未索引的文档批量建立索引</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    搜索管理
+                </div>
+                <div class="panel-body">
+
+                    <form action="/elastic/indexcreate" method="post">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-lg-1">数据表名</label>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" placeholder="" name="tablename"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-1"></label>
+                                <div class="col-lg-3">
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="panel-footer">
+                        panel-footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

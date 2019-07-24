@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户组列表</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <script src="/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+
+<!--# include("../common/header-common.html"){} -->
+<div class="container" style="margin-top: 10px;">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px 0 0px 0;">
+                    <div class="row">
+                        <div class="col-lg-2" style="padding: 5px 0 0px 15px;">
+                            <span style="margin: 20px 0 0 0;padding: 20px 0 0 0;">用户组列表</span>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="btn-group pull-right">
+                                <a class="btn btn-primary btn-sm" href="/admin/attr/attrnew"> +新增属性 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/item/items"> 商品列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/brand/brandlist"> 品牌列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/manu/manulist"> 厂商列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/category/categorylist"> 分类列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/depart/departlist"> 门类列表</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert text-center">
+                            <!--# include("../common/pagination-common.html"){} -->
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="padding: 0 0 10px 0">
+                        <div class="col-lg-2">
+                            logId
+                        </div>
+                        <div class="col-lg-2">
+                            query
+                        </div>
+                        <div class="col-lg-2">
+                            ip
+                        </div>
+                        <div class="col-lg-2">
+                            terminal
+                        </div>
+                        <div class="col-lg-2">
+                            webUrl
+                        </div>
+                        <div class="col-lg-2">
+                            createTime
+                        </div>
+                        <div class="col-lg-3">
+                            属性名
+                        </div>
+                    </div>
+                    <hr/>
+                    <!--# for(x in queryloglist){ -->
+                    <div class="row" style="padding: 5px 0 0 0;">
+                        <div class="col-lg-2">
+                            ${x.logId}
+                        </div>
+                        <div class="col-lg-2">
+                            ${x.query}
+                        </div>
+                        <div class="col-lg-2">
+                            ${x.ip}
+                        </div>
+                        <div class="col-lg-2">
+                            ${x.terminal}
+                        </div>
+                        <div class="col-lg-2">
+                            ${x.webUrl}
+                        </div>
+                        <div class="col-lg-2">
+                            ${x.createTime}
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="/admin/queryLog/queryLogedit?logId=${x.logId}"
+                               class="btn btn-primary btn-sm">修改</a>
+                            <a href="/admin/queryLog/queryLogs?logId=${x.logId}" class="btn btn-primary btn-sm">权限列表</a>
+                            <a href="/admin/queryLog/queryLogedit?logId=${x.logId}"
+                               class="btn btn-primary btn-sm">规格</a>
+                        </div>
+                    </div>
+                    <!--<hr/>-->
+                    <!--# } -->
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-lg-2">用户组情况</div>
+                        <div class="col-lg-10">
+                            <a href="/query/querycreate" class="btn btn-primary">查询分词</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert pull-right">
+                    <!--# include("../common/pagination-common.html"){} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

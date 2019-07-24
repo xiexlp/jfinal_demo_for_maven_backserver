@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询结果</title>
+
+
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <script src="/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <img src="/img/timg.jpg" class="img-circle" alt="" style="height: 60px;width: 40px;float: left"/>
+        <div style="float: left;padding: 30px 0 0 0;"><a href="/boot/doc/index" style="font-size: 20px;color: #0000ff;">狮子查询</a></span></div>
+    </div>
+
+    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 20px 0 0 0px">
+        <form method="post" action="/boot/postings/search">
+            <div class="input-group" style="width: 40%">
+                <input type="text" name="query" class="form-control" placeholder="请输入您要查询的关键词"/>
+                <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">搜索</button>
+                    </span>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="container" style="width: 86.2%">
+
+    <div class="panel panel-default">
+        <span>狮子查询结果如下:</span>
+        <div class="panel-heading" style="height: 30px;padding: 2px 2px 2px 2px;">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-right">
+                #include("/boot/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <ul class="list-unstyled" style="border: 0px;">
+                #for(hit:hitPageList)
+                <a href="#(hit.url)" class="list-group-item" target="_blank" style="border: 0px;">
+                    <li class="" style="border: 0px;">
+                        <h4 class="list-group-item-heading" style="color: blue;text-decoration:underline">#(hit.title)</h4>得分: #(hit.score)
+                        <p class="list-group-item-text">#(hit.body)</p>
+                    </li>
+                </a>
+
+                <hr/>
+
+                #end
+            </ul>
+        </div>
+        <div class="panel-footer" style="height: 30px;padding: 2px 2px 2px 2px;">
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    #include("/boot/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

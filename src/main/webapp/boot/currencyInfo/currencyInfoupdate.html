@@ -1,0 +1,152 @@
+#include("/boot/common/boot_nav.html")
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        currencyInfoupdate 更新
+    </div>
+    <div class="panel-body">
+
+<!-- editform 用于编辑 -->
+<form action="/boot/currencyInfo/currencyInfoupdate" id="editCurrencyInfoForm" method="post" name="editCurrencyInfoForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+                                    <div class="form-group">
+                    <label for="currencyId" class="control-label col-lg-3">currencyId</label>
+                    <div class="col-lg-3">
+                        <input type="text" readonly id="currencyId" name="currencyId" class="form-control" value="#(currencyInfo.currencyId)">
+                    </div>
+                </div>
+            
+
+                                    <div class="form-group">
+                    <label for="name" class="control-label col-lg-3">name</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="name" name="name" class="form-control" value="#(currencyInfo.name)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(nameInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="symbol" class="control-label col-lg-3">symbol</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="symbol" name="symbol" class="form-control" value="#(currencyInfo.symbol)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(symbolInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="volume" class="control-label col-lg-3">volume</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="volume" name="volume" class="form-control" value="#(currencyInfo.volume)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(volumeInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="circulatingVolume" class="control-label col-lg-3">circulatingVolume</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="circulatingVolume" name="circulatingVolume" class="form-control" value="#(currencyInfo.circulatingVolume)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(circulatingVolumeInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="initPrice" class="control-label col-lg-3">initPrice</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="initPrice" name="initPrice" class="form-control" value="#(currencyInfo.initPrice)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(initPriceInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="initDate" class="control-label col-lg-3">initDate</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="initDate" name="initDate" class="form-control" value="#(currencyInfo.initDate)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(initDateInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="url" class="control-label col-lg-3">url</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="url" name="url" class="form-control" value="#(currencyInfo.url)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(urlInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="currencyDesc" class="control-label col-lg-3">currencyDesc</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="currencyDesc" name="currencyDesc" class="form-control" value="#(currencyInfo.currencyDesc)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(currencyDescInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="srcWebId" class="control-label col-lg-3">srcWebId</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="srcWebId" name="srcWebId" class="form-control" value="#(currencyInfo.srcWebId)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(srcWebIdInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="currencyIdName" class="control-label col-lg-3">currencyIdName</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="currencyIdName" name="currencyIdName" class="form-control" value="#(currencyInfo.currencyIdName)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(currencyIdNameInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="detailLink" class="control-label col-lg-3">detailLink</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="detailLink" name="detailLink" class="form-control" value="#(currencyInfo.detailLink)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(detailLinkInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="masterLink" class="control-label col-lg-3">masterLink</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="masterLink" name="masterLink" class="form-control" value="#(currencyInfo.masterLink)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(masterLinkInfo)</label>
+            
+
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-3">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <div class="panel-footer">
+        panel-footer
+    </div>
+</div>
+</div>
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyInfoAddEditValidator.js"></script>
+
+
+
+
+

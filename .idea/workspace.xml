@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5102775-f81f-4b32-b531-dbc74578e51f" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyPosDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyPosDaoimpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2700">
+              <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servupdate/CurrencyPosServUpdate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyPriceServRead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPos/currencyPosPartPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2150">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/LionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPriceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2100">
+              <caret line="98" column="108" selection-start-line="98" selection-start-column="78" selection-end-line="98" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPrice/currencyPricePartPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4425">
+              <caret line="177" column="57" selection-start-line="177" selection-start-column="57" selection-end-line="177" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPosController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2550">
+              <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>request,</find>
+      <find>view.addObject</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>setAttr</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lexicon/lex-btc.lex" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/common/util/PageList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/common/util/Pager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/common/util/PageInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/orm/Hit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/IndexAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/counter/DBUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/counter/DbCounterUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/counter/CounterStat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lionsoul/ComplexSeg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lionsoul/jcseg/test/JcsegUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/SearchDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/JcsegService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/common/util/ControllerAdaper.java" />
+        <option value="$PROJECT_DIR$/lexicon/lex-internet.lex" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/PostingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/DataMove.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/lab/DocUrlEdit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/IndexDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/common/DemoConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/boot/currencyPos/currencyPoss.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodesOnlineJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyPosDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyPriceControllerEx.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/boot/currencyPrice/currencyPrices.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapAllJob.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/boot/common/pagination-jfinal.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/index/DataIndexQuartz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyPriceServRead.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyPriceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyPriceDaoimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/common/util/PageArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyInfoServRead.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoex/CurrencyInfoDaoEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyInfoDaoimplEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyInfoControllerEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoex/CurrencyPosDaoEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyPosControllerEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyPosDaoimplEx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodesOnline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyPosServRead.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyPosDaoimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/boot/currencyPrice/currencyPricePartPage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/boot/currencyPos/currencyPosPartPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPriceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPosController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1620" />
+    <option name="height" value="920" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="isearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="isearch" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="isearch" type="462c0819:PsiDirectoryNode" />
+              <item name="servread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="isearch" type="462c0819:PsiDirectoryNode" />
+              <item name="servupdate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lionsoul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="currencyPos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfinal_demo_for_maven_backserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfinal_demo_for_maven_backserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="currencyPrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/js/isearch/jobs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver\src\main\java\com\js\isearch\jobs" />
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver\src\main\java" />
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver\src\main\webapp" />
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver\src\main\resources" />
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver\src\main\webapp\boot\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.js.isearch.jobs" />
+      <recent name="org.lionsoul" />
+      <recent name="com.js.common.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\jfinal\jfinal-3.4_demo_for_maven_backserver\jfinal_demo_for_maven_backserver" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CurrencyPosServRead">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinMarketCap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.js.isearch.jobs.CoinMarketCap" />
+      <module name="jfinal_demo_for_maven_backserver" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.js.isearch.jobs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinMarketCapAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.js.isearch.jobs.CoinMarketCapAll" />
+      <module name="jfinal_demo_for_maven_backserver" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.js.isearch.jobs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyInfoServRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.js.isearch.servread.CurrencyInfoServRead" />
+      <module name="jfinal_demo_for_maven_backserver" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.js.isearch.servread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyPosServRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.js.isearch.servread.CurrencyPosServRead" />
+      <module name="jfinal_demo_for_maven_backserver" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.js.isearch.servread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MasterNodesOnline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.js.isearch.jobs.MasterNodesOnline" />
+      <module name="jfinal_demo_for_maven_backserver" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.js.isearch.jobs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CurrencyInfoServRead" />
+      <item itemvalue="Application.CoinMarketCap" />
+      <item itemvalue="Application.CoinMarketCapAll" />
+      <item itemvalue="Application.MasterNodesOnline" />
+      <item itemvalue="Application.CurrencyPosServRead" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CurrencyPosServRead" />
+        <item itemvalue="Application.MasterNodesOnline" />
+        <item itemvalue="Application.CoinMarketCapAll" />
+        <item itemvalue="Application.CurrencyInfoServRead" />
+        <item itemvalue="Application.CoinMarketCap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5102775-f81f-4b32-b531-dbc74578e51f" name="Default" comment="" />
+      <created>1537758164248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537758164248</updated>
+      <workItem from="1537758165754" duration="5318000" />
+      <workItem from="1537767727643" duration="7064000" />
+      <workItem from="1537793129917" duration="1806000" />
+      <workItem from="1537842985092" duration="1608000" />
+      <workItem from="1537854847521" duration="1909000" />
+      <workItem from="1537929286334" duration="3134000" />
+      <workItem from="1538016395253" duration="4343000" />
+      <workItem from="1538034852988" duration="3090000" />
+      <workItem from="1538143213924" duration="1043000" />
+      <workItem from="1538192571180" duration="2274000" />
+      <workItem from="1538621233035" duration="2240000" />
+      <workItem from="1538793281716" duration="6188000" />
+      <workItem from="1538878259635" duration="6447000" />
+      <workItem from="1538890318991" duration="2409000" />
+      <workItem from="1538962338776" duration="602000" />
+      <workItem from="1538966357713" duration="1127000" />
+      <workItem from="1538980659130" duration="606000" />
+      <workItem from="1539050034711" duration="625000" />
+      <workItem from="1539050864193" duration="2184000" />
+      <workItem from="1539065822109" duration="608000" />
+      <workItem from="1539073388403" duration="608000" />
+      <workItem from="1539157078752" duration="604000" />
+      <workItem from="1539570472464" duration="2650000" />
+      <workItem from="1539846942543" duration="2252000" />
+      <workItem from="1539938909323" duration="1869000" />
+      <workItem from="1540006333940" duration="2408000" />
+      <workItem from="1540345351234" duration="3915000" />
+      <workItem from="1540356157766" duration="510000" />
+      <workItem from="1540363799675" duration="844000" />
+      <workItem from="1540432653546" duration="3647000" />
+      <workItem from="1540453337938" duration="1646000" />
+      <workItem from="1540518021410" duration="1796000" />
+      <workItem from="1540533548552" duration="2504000" />
+      <workItem from="1540555885554" duration="3577000" />
+      <workItem from="1540777811768" duration="2353000" />
+      <workItem from="1540792351766" duration="1252000" />
+      <workItem from="1541124239470" duration="3875000" />
+      <workItem from="1541137408603" duration="3839000" />
+      <workItem from="1541161836325" duration="4988000" />
+      <workItem from="1541207812200" duration="8939000" />
+      <workItem from="1541220601750" duration="840000" />
+      <workItem from="1541250501723" duration="1188000" />
+      <workItem from="1541381209063" duration="4729000" />
+      <workItem from="1541396107354" duration="5095000" />
+      <workItem from="1541551006270" duration="6894000" />
+      <workItem from="1541568225947" duration="3348000" />
+      <workItem from="1541680982006" duration="2420000" />
+      <workItem from="1541939345124" duration="602000" />
+      <workItem from="1542766589587" duration="5641000" />
+      <workItem from="1543049150012" duration="630000" />
+      <workItem from="1543237681543" duration="1632000" />
+      <workItem from="1544017306517" duration="1245000" />
+      <workItem from="1545037301827" duration="1744000" />
+      <workItem from="1545143599618" duration="598000" />
+      <workItem from="1548386010519" duration="2031000" />
+      <workItem from="1548469189936" duration="3187000" />
+      <workItem from="1548557816200" duration="1907000" />
+      <workItem from="1548759267206" duration="1811000" />
+      <workItem from="1548813309083" duration="1197000" />
+      <workItem from="1548900599526" duration="599000" />
+      <workItem from="1548912537766" duration="1734000" />
+      <workItem from="1548931280291" duration="4212000" />
+      <workItem from="1549071598475" duration="1796000" />
+      <workItem from="1549082557161" duration="2738000" />
+      <workItem from="1549104261399" duration="203000" />
+      <workItem from="1549106960765" duration="1218000" />
+      <workItem from="1549161386703" duration="1726000" />
+      <workItem from="1549169420693" duration="1199000" />
+      <workItem from="1549246603253" duration="1140000" />
+      <workItem from="1549257761285" duration="594000" />
+      <workItem from="1549278215881" duration="591000" />
+      <workItem from="1549593622270" duration="1196000" />
+      <workItem from="1549608292286" duration="1808000" />
+      <workItem from="1549676263418" duration="1218000" />
+      <workItem from="1549687400263" duration="1802000" />
+      <workItem from="1549762845638" duration="1536000" />
+      <workItem from="1549772867647" duration="1772000" />
+      <workItem from="1549792814547" duration="596000" />
+      <workItem from="1549797732897" duration="1426000" />
+      <workItem from="1549847981500" duration="610000" />
+      <workItem from="1550307582644" duration="1157000" />
+      <workItem from="1550321985893" duration="1189000" />
+      <workItem from="1550367185612" duration="1195000" />
+      <workItem from="1550369480233" duration="595000" />
+      <workItem from="1550386491143" duration="1109000" />
+      <workItem from="1550393365447" duration="1035000" />
+      <workItem from="1550409283520" duration="591000" />
+      <workItem from="1550453693809" duration="1923000" />
+      <workItem from="1550494851818" duration="186000" />
+      <workItem from="1550496419250" duration="1754000" />
+      <workItem from="1550544526685" duration="1621000" />
+      <workItem from="1550556746221" duration="2777000" />
+      <workItem from="1550578719066" duration="599000" />
+      <workItem from="1550636379942" duration="4289000" />
+      <workItem from="1550712359617" duration="6164000" />
+      <workItem from="1550735696050" duration="728000" />
+      <workItem from="1550755666634" duration="1207000" />
+      <workItem from="1550820258182" duration="662000" />
+      <workItem from="1550975711793" duration="752000" />
+      <workItem from="1552115695098" duration="46000" />
+      <workItem from="1552354988747" duration="409000" />
+      <workItem from="1552359372730" duration="634000" />
+      <workItem from="1552397632837" duration="804000" />
+      <workItem from="1552613322031" duration="1300000" />
+      <workItem from="1554450710238" duration="2573000" />
+      <workItem from="1561024806658" duration="714000" />
+      <workItem from="1561034028874" duration="7409000" />
+      <workItem from="1561080254279" duration="2452000" />
+      <workItem from="1561084359882" duration="4403000" />
+      <workItem from="1561096484780" duration="9810000" />
+      <workItem from="1561183405632" duration="13074000" />
+      <workItem from="1561253520297" duration="8193000" />
+      <workItem from="1561276330510" duration="6820000" />
+      <workItem from="1561427793991" duration="10882000" />
+      <workItem from="1561512011902" duration="5724000" />
+      <workItem from="1561872459334" duration="1256000" />
+      <workItem from="1561967532297" duration="1207000" />
+      <workItem from="1562037868820" duration="1220000" />
+      <workItem from="1562057066448" duration="2646000" />
+      <workItem from="1562119541042" duration="15344000" />
+      <workItem from="1562141573010" duration="4086000" />
+      <workItem from="1563418070951" duration="2995000" />
+      <workItem from="1563495857694" duration="1334000" />
+      <workItem from="1563671868983" duration="1796000" />
+      <workItem from="1563678403124" duration="1895000" />
+      <workItem from="1563714076458" duration="586000" />
+      <workItem from="1563758139219" duration="1170000" />
+      <workItem from="1563771948011" duration="2391000" />
+      <workItem from="1563803642754" duration="596000" />
+      <workItem from="1563845213331" duration="3630000" />
+      <workItem from="1563931302147" duration="1802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="333888000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2387339" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36644593" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295964" />
+      <window_info anchor="bottom" id="Tool Output" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3289183" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="9" visible="true" weight="0.13090129" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../jfinalseries/jfinal-3.3_demo_for_maven_310/jfinal_demo_for_maven_iplatform/src/main/webapp/market/item/select.js" />
+        <option value="$PROJECT_DIR$/../../jfinalseries/jfinal-3.3_demo_for_maven_310/jfinal_demo_for_maven_iplatform/src/main/webapp/market/item/select.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/demo/common/DemoConfig.java</url>
+          <line>123</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servex/CurrencyPosServEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding>
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyInfoDaoimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/index/DataIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyStatusDaoimplEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="414" column="11" selection-start-line="414" selection-start-column="11" selection-end-line="414" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoex/CurrencyStatusDaoEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servex/CurrencyStatusServEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/index/DataIndexJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="69" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyStatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/orm/CurrencyPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/ormex/CurrencyPriceEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyPriceControllerEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="148" column="5" lean-forward="true" selection-start-line="139" selection-start-column="2" selection-end-line="148" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPrice/currencyPrices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="149" column="49" lean-forward="true" selection-end-line="161" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/common/pagination-jfinal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyPriceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyPriceDaoimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/common/util/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/PostingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/common/util/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/common/util/ControllerAdaper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4525">
+          <caret line="189" column="41" selection-start-line="189" selection-start-column="41" selection-end-line="189" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/common/util/PageList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/common/util/PageArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyPriceDaoimplEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyInfoServRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1636">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/optimize/CurrencyInfoOptimize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/index/DataIndexQuartz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servex/CurrencyInfoServEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapAllJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5080">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyInfoDaoimplEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10625">
+          <caret line="438" column="38" selection-start-line="438" selection-start-column="38" selection-end-line="438" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyInfoControllerEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="152" column="44" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoex/CurrencyInfoDaoEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPos/currencyPoss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="72" column="38" selection-end-line="159" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimplex/CurrencyPosDaoimplEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10875">
+          <caret line="448" column="36" selection-start-line="448" selection-start-column="36" selection-end-line="448" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controllerex/CurrencyPosControllerEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3650">
+          <caret line="154" column="114" selection-start-line="154" selection-start-column="114" selection-end-line="154" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoex/CurrencyPosDaoEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="43" column="115" selection-start-line="43" selection-start-column="115" selection-end-line="43" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodesOnlineJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/MasterNodesOnline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyPosServRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="46" column="60" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/dao/CurrencyPosDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/daoimpl/CurrencyPosDaoimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servupdate/CurrencyPosServUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPos/currencyPosPartPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/LionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPriceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="98" column="108" selection-start-line="98" selection-start-column="78" selection-end-line="98" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/boot/currencyPrice/currencyPricePartPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="177" column="57" selection-start-line="177" selection-start-column="57" selection-end-line="177" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/cluster/nginx/backserver/controller/CurrencyPosController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/jobs/CoinMarketCapJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/isearch/servread/CurrencyPriceServRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

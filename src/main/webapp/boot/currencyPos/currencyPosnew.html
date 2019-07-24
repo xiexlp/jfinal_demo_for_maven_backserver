@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>currencyPos增加</title>
+    <link rel="stylesheet" href="/jss/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/jss/css/main.css"/>
+    <script src="/jss/js/vendor/jquery.js"></script>
+    <link rel="stylesheet" href="/jss/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+<!-- addform 用于增加 -->
+<form action="/boot/currencyPos/currencyPosnew" id="addCurrencyPosForm" method="post" name="addCurrencyPosForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+                    <div class="form-group">
+                <label for="currencyPosId" class="control-label col-lg-3">currencyPosId</label>
+                <div class="col-lg-3">
+                    <input type="text" id="currencyPosId" name="currencyPosId" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(currencyPosIdInfo)</label>
+                    <div class="form-group">
+                <label for="currencyName" class="control-label col-lg-3">currencyName</label>
+                <div class="col-lg-3">
+                    <input type="text" id="currencyName" name="currencyName" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(currencyNameInfo)</label>
+                    <div class="form-group">
+                <label for="symbol" class="control-label col-lg-3">symbol</label>
+                <div class="col-lg-3">
+                    <input type="text" id="symbol" name="symbol" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(symbolInfo)</label>
+                    <div class="form-group">
+                <label for="logoUrl" class="control-label col-lg-3">logoUrl</label>
+                <div class="col-lg-3">
+                    <input type="text" id="logoUrl" name="logoUrl" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(logoUrlInfo)</label>
+                    <div class="form-group">
+                <label for="currentPrice" class="control-label col-lg-3">currentPrice</label>
+                <div class="col-lg-3">
+                    <input type="text" id="currentPrice" name="currentPrice" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(currentPriceInfo)</label>
+                    <div class="form-group">
+                <label for="priceChange" class="control-label col-lg-3">priceChange</label>
+                <div class="col-lg-3">
+                    <input type="text" id="priceChange" name="priceChange" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(priceChangeInfo)</label>
+                    <div class="form-group">
+                <label for="volume" class="control-label col-lg-3">volume</label>
+                <div class="col-lg-3">
+                    <input type="text" id="volume" name="volume" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(volumeInfo)</label>
+                    <div class="form-group">
+                <label for="marketCap" class="control-label col-lg-3">marketCap</label>
+                <div class="col-lg-3">
+                    <input type="text" id="marketCap" name="marketCap" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(marketCapInfo)</label>
+                    <div class="form-group">
+                <label for="roi" class="control-label col-lg-3">roi</label>
+                <div class="col-lg-3">
+                    <input type="text" id="roi" name="roi" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(roiInfo)</label>
+                    <div class="form-group">
+                <label for="nodeNum" class="control-label col-lg-3">nodeNum</label>
+                <div class="col-lg-3">
+                    <input type="text" id="nodeNum" name="nodeNum" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(nodeNumInfo)</label>
+                    <div class="form-group">
+                <label for="requiredNum" class="control-label col-lg-3">requiredNum</label>
+                <div class="col-lg-3">
+                    <input type="text" id="requiredNum" name="requiredNum" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(requiredNumInfo)</label>
+                    <div class="form-group">
+                <label for="mnWorth" class="control-label col-lg-3">mnWorth</label>
+                <div class="col-lg-3">
+                    <input type="text" id="mnWorth" name="mnWorth" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(mnWorthInfo)</label>
+                    <div class="form-group">
+                <label for="createTime" class="control-label col-lg-3">createTime</label>
+                <div class="col-lg-3">
+                    <input type="text" id="createTime" name="createTime" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(createTimeInfo)</label>
+                    <div class="form-group">
+                <label for="updateTime" class="control-label col-lg-3">updateTime</label>
+                <div class="col-lg-3">
+                    <input type="text" id="updateTime" name="updateTime" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(updateTimeInfo)</label>
+                    <div class="form-group">
+                <label for="infoUrl" class="control-label col-lg-3">infoUrl</label>
+                <div class="col-lg-3">
+                    <input type="text" id="infoUrl" name="infoUrl" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(infoUrlInfo)</label>
+                    <div class="form-group">
+                <label for="currencyId" class="control-label col-lg-3">currencyId</label>
+                <div class="col-lg-3">
+                    <input type="text" id="currencyId" name="currencyId" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(currencyIdInfo)</label>
+                    <div class="form-group">
+                <label for="batchTime" class="control-label col-lg-3">batchTime</label>
+                <div class="col-lg-3">
+                    <input type="text" id="batchTime" name="batchTime" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(batchTimeInfo)</label>
+                    <div class="form-group">
+                <label for="detailLink" class="control-label col-lg-3">detailLink</label>
+                <div class="col-lg-3">
+                    <input type="text" id="detailLink" name="detailLink" class="form-control">
+                </div>
+            </div>
+            <label class="label label-danger">#(detailLinkInfo)</label>
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-3">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyPosAddEditValidator.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+</head>
+<body>
+#include("../common/header-common.html")
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    #(t.title) 索引状态:#(t.indexStatus) 文章大小:#(t.bodySize)<span class="label-info pull-right">所属数据库:#(t.dbname) ,表格:#(t.tablename) </span>
+                    #if(t.indexStatus==0)
+                    <label>未索引</label>
+                    #else
+                    <label>已经索引</label>
+                    #end
+                </div>
+                <div class="panel-body">
+                    #(t.body)
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="btn-group">
+                                <a href="/doc/indexcreate?docId=#(t.docId)&fieldname=title" type="button" class="btn btn-primary">对标题建立索引</a>
+                                <a href="/doc/indexcreate?docId=#(t.docId)&fieldname=content" type="button" class="btn btn-primary">对内容建立索引</a>
+                                <a href="/doc/indexdoc?docId=#(t.docId)" type="button" class="btn btn-primary">对整个文档索引</a>
+                                <a href="/postings/postingsdel?docId=#(t.docId)" type="button" class="btn btn-primary">删除索引</a>
+                                <a type="button" class="btn btn-primary">更新索引</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="/boot/doc/index" class="btn btn-primary col-lg-offset-5 pull-right">返回文档列表</a>
+                            <a href="/boot/postings/list?docId=#(t.docId)" class="btn btn-primary  pull-right">查看该文档索引列表</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    文章的索引列表:
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+                            #include("../common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="请输入关键字"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">搜索</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="padding: 0 0 10px 0">
+                        <div class="col-lg-1">
+                            docId
+                        </div>
+                        <div class="col-lg-3">
+                            token
+                        </div>
+
+                        <div class="col-lg-1">
+                            frequency
+                        </div>
+
+                        <div class="col-lg-1">
+                            tablename
+                        </div>
+
+                        <div class="col-lg-2">
+                            createTime
+                        </div>
+
+                        <div class="col-lg-1">
+                            positions
+                        </div>
+
+                        <div class="col-lg-1">
+                            fieldname
+                        </div>
+                        <div class="col-lg-2">
+                            属性名
+                        </div>
+                    </div>
+                    <hr/>
+                    #for(x:postingsList)
+                    <div class="row" style="padding: 5px 0 0 0;">
+                        <div class="col-lg-1">
+                            #(x.docId)
+                        </div>
+
+                        <div class="col-lg-3">
+                            #(x.token)
+                        </div>
+
+                        <div class="col-lg-1">
+                            #(x.frequency)
+                        </div>
+
+                        <div class="col-lg-1">
+                            #(x.tablename)
+                        </div>
+
+                        <div class="col-lg-2">
+                            #(x.createTime)
+                        </div>
+                        <div class="col-lg-1">
+                            #(x.positions)
+
+                        </div>
+                        <div class="col-lg-1">
+                            #(x.fieldname)
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="/admin/board/boardupdate?postingId=#(x.postingId)" class="btn btn-primary btn-sm">修改</a>
+                            <a href="/boot/doc/docdetail?docId=#(x.docId)" class="btn btn-primary btn-sm">详情</a>
+                            <a href="/admin/board/boardedit?postingId=#(x.postingId)" class="btn btn-primary btn-sm">规格</a>
+                        </div>
+                    </div>
+                    #end
+                </div>
+                <div class="panel-footer">
+                    <a href="/boot/doc/index" class="btn btn-primary">返回文档列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

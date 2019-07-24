@@ -1,0 +1,98 @@
+#include("/boot/common/boot_nav.html")
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        currencyStatusupdate 更新
+    </div>
+    <div class="panel-body">
+
+<!-- editform 用于编辑 -->
+<form action="/boot/currencyStatus/currencyStatusupdate" id="editCurrencyStatusForm" method="post" name="editCurrencyStatusForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+                                    <div class="form-group">
+                    <label for="currencyStatusId" class="control-label col-lg-3">currencyStatusId</label>
+                    <div class="col-lg-3">
+                        <input type="text" readonly id="currencyStatusId" name="currencyStatusId" class="form-control" value="#(currencyStatus.currencyStatusId)">
+                    </div>
+                </div>
+            
+
+                                    <div class="form-group">
+                    <label for="posPanelNum" class="control-label col-lg-3">posPanelNum</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="posPanelNum" name="posPanelNum" class="form-control" value="#(currencyStatus.posPanelNum)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(posPanelNumInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="pricePanelNum" class="control-label col-lg-3">pricePanelNum</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="pricePanelNum" name="pricePanelNum" class="form-control" value="#(currencyStatus.pricePanelNum)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(pricePanelNumInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="posLastBatchTime" class="control-label col-lg-3">posLastBatchTime</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="posLastBatchTime" name="posLastBatchTime" class="form-control" value="#(currencyStatus.posLastBatchTime)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(posLastBatchTimeInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="priceLastBatchTime" class="control-label col-lg-3">priceLastBatchTime</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="priceLastBatchTime" name="priceLastBatchTime" class="form-control" value="#(currencyStatus.priceLastBatchTime)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(priceLastBatchTimeInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="createTime" class="control-label col-lg-3">createTime</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="createTime" name="createTime" class="form-control" value="#(currencyStatus.createTime)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(createTimeInfo)</label>
+            
+
+                                    <div class="form-group">
+                    <label for="updateTime" class="control-label col-lg-3">updateTime</label>
+                    <div class="col-lg-3">
+                        <input type="text" id="updateTime" name="updateTime" class="form-control" value="#(currencyStatus.updateTime)">
+                    </div>
+                </div>
+                <label class="label label-danger">#(updateTimeInfo)</label>
+            
+
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-3">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <div class="panel-footer">
+        panel-footer
+    </div>
+</div>
+</div>
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyStatusAddEditValidator.js"></script>
+
+
+
+
+

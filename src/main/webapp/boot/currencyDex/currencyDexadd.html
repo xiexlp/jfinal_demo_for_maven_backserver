@@ -1,0 +1,74 @@
+#include("/boot/common/boot_nav.html")
+
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        currencyDexadd 新增
+    </div>
+    <div class="panel-body">
+<!-- addform 用于增加 -->
+<form action="/boot/currencyDex/currencyDexadd" method="post" id="addCurrencyDexForm" name="addCurrencyDexForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+        
+                            <div class="form-group">
+                    <label for="dexId" class="control-label col-lg-3">dexId</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="dexId" name="dexId" class="form-control" readonly>
+                    </div>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="name" class="control-label col-lg-3">name</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(nameInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="url" class="control-label col-lg-3">url</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="url" name="url" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(urlInfo)</label>
+                </div>
+            
+        
+                            <div class="form-group">
+                    <label for="logoUrl" class="control-label col-lg-3">logoUrl</label>
+                    <div class="col-lg-6">
+                        <input type="text" id="logoUrl" name="logoUrl" class="form-control">
+                    </div>
+                    <!--错误提示-->
+                    <label class="label label-danger">#(logoUrlInfo)</label>
+                </div>
+            
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-6">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <div class="panel-footer">
+        panel-footer
+    </div>
+</div>
+</div>
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyDexAddEditValidator.js"></script>
+
+
+
+
+

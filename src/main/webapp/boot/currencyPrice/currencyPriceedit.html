@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>currencyPrice修改</title>
+    <link rel="stylesheet" href="/jss/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/jss/css/main.css"/>
+    <script src="/jss/js/vendor/jquery.js"></script>
+    <link rel="stylesheet" href="/jss/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+
+<!-- editform 用于编辑 -->
+<form action="/boot/currencyPrice/currencyPriceedit" id="addCurrencyPriceForm" method="post" name="editCurrencyPriceForm">
+    <div class="form-horizontal" style="padding: 10px 0 0 10px;">
+                    <div class="form-group">
+                <label for="currencyPriceId" class="control-label col-lg-3">currencyPriceId</label>
+                <div class="col-lg-6">
+                    <input type="text" id="currencyPriceId" name="currencyPriceId" class="form-control" value="#(currencyPrice.currencyPriceId)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="currencyId" class="control-label col-lg-3">currencyId</label>
+                <div class="col-lg-6">
+                    <input type="text" id="currencyId" name="currencyId" class="form-control" value="#(currencyPrice.currencyId)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="name" class="control-label col-lg-3">name</label>
+                <div class="col-lg-6">
+                    <input type="text" id="name" name="name" class="form-control" value="#(currencyPrice.name)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="symbol" class="control-label col-lg-3">symbol</label>
+                <div class="col-lg-6">
+                    <input type="text" id="symbol" name="symbol" class="form-control" value="#(currencyPrice.symbol)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="currentPrice" class="control-label col-lg-3">currentPrice</label>
+                <div class="col-lg-6">
+                    <input type="text" id="currentPrice" name="currentPrice" class="form-control" value="#(currencyPrice.currentPrice)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="priceChange" class="control-label col-lg-3">priceChange</label>
+                <div class="col-lg-6">
+                    <input type="text" id="priceChange" name="priceChange" class="form-control" value="#(currencyPrice.priceChange)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="dexId" class="control-label col-lg-3">dexId</label>
+                <div class="col-lg-6">
+                    <input type="text" id="dexId" name="dexId" class="form-control" value="#(currencyPrice.dexId)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="dexName" class="control-label col-lg-3">dexName</label>
+                <div class="col-lg-6">
+                    <input type="text" id="dexName" name="dexName" class="form-control" value="#(currencyPrice.dexName)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="createTime" class="control-label col-lg-3">createTime</label>
+                <div class="col-lg-6">
+                    <input type="text" id="createTime" name="createTime" class="form-control" value="#(currencyPrice.createTime)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="updateTime" class="control-label col-lg-3">updateTime</label>
+                <div class="col-lg-6">
+                    <input type="text" id="updateTime" name="updateTime" class="form-control" value="#(currencyPrice.updateTime)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="volume" class="control-label col-lg-3">volume</label>
+                <div class="col-lg-6">
+                    <input type="text" id="volume" name="volume" class="form-control" value="#(currencyPrice.volume)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="circulatingVolume" class="control-label col-lg-3">circulatingVolume</label>
+                <div class="col-lg-6">
+                    <input type="text" id="circulatingVolume" name="circulatingVolume" class="form-control" value="#(currencyPrice.circulatingVolume)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="marketCap" class="control-label col-lg-3">marketCap</label>
+                <div class="col-lg-6">
+                    <input type="text" id="marketCap" name="marketCap" class="form-control" value="#(currencyPrice.marketCap)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="rankMarketCap" class="control-label col-lg-3">rankMarketCap</label>
+                <div class="col-lg-6">
+                    <input type="text" id="rankMarketCap" name="rankMarketCap" class="form-control" value="#(currencyPrice.rankMarketCap)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="batchTime" class="control-label col-lg-3">batchTime</label>
+                <div class="col-lg-6">
+                    <input type="text" id="batchTime" name="batchTime" class="form-control" value="#(currencyPrice.batchTime)">
+                </div>
+            </div>
+                    <div class="form-group">
+                <label for="infoUrl" class="control-label col-lg-3">infoUrl</label>
+                <div class="col-lg-6">
+                    <input type="text" id="infoUrl" name="infoUrl" class="form-control" value="#(currencyPrice.infoUrl)">
+                </div>
+            </div>
+                <!--提交-->
+        <div class="form-group">
+            <label for="" class="control-label col-lg-3"></label>
+            <div class="col-lg-6">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+<!--<script src="/jslib/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="/jss/jquery-validator/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="/boot/jslib/validator-orm/currencyPriceAddEditValidator.js"></script>
+
+</body>
+</html>
+
+
+

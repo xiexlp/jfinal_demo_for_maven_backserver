@@ -1,0 +1,150 @@
+package com.demo.common;
+
+import com.demo.blog.BlogController;
+import com.demo.common.model._MappingKit;
+import com.demo.index.IndexController;
+import com.jfinal.config.Constants;
+import com.jfinal.config.Handlers;
+import com.jfinal.config.Interceptors;
+import com.jfinal.config.JFinalConfig;
+import com.jfinal.config.Plugins;
+import com.jfinal.config.Routes;
+import com.jfinal.core.JFinal;
+import com.jfinal.kit.PropKit;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.druid.DruidPlugin;
+import com.jfinal.template.Engine;
+import com.js.cluster.nginx.backserver.controller.*;
+import com.js.isearch.index.DataIndexQuartz;
+import com.js.isearch.orm.Token;
+import org.quartz.SchedulerException;
+
+
+/**
+ * 本 demo 仅表达最为粗浅的 jfinal 用法，更为有价值的实用的企业级用法
+ * 详见 JFinal 俱乐部: http://jfinal.com/club
+ * 
+ * API引导式配置
+ */
+public class DemoConfig extends JFinalConfig {
+	
+	/**
+	 * 运行此 main 方法可以启动项目，此main方法可以放置在任意的Class类定义中，不一定要放于此
+	 * 
+	 * 使用本方法启动过第一次以后，会在开发工具的 debug、run config 中自动生成
+	 * 一条启动配置，可对该自动生成的配置再添加额外的配置项，例如 VM argument 可配置为：
+	 * -XX:PermSize=64M -XX:MaxPermSize=256M
+	 */
+	public static void main(String[] args) {
+		/**
+		 * 特别注意：Eclipse 之下建议的启动方式
+		 */
+		JFinal.start("src/main/webapp", 10002, "/", 5);
+		
+		/**
+		 * 特别注意：IDEA 之下建议的启动方式，仅比 eclipse 之下少了最后一个参数
+		 */
+		// JFinal.start("src/main/webapp", 80, "/");
+	}
+	
+	/**
+	 * 配置常量
+	 */
+	public void configConstant(Constants me) {
+		// 加载少量必要配置，随后可用PropKit.get(...)获取值
+		PropKit.use("a_little_config.txt");
+		me.setDevMode(PropKit.getBoolean("devMode", false));
+	}
+	
+	/**
+	 * 配置路由
+	 */
+	public void configRoute(Routes me) {
+		me.add("/", IndexController.class, "/index");	// 第三个参数为该Controller的视图存放路径
+		me.add("/blog", BlogController.class);			// 第三个参数省略时默认与第一个参数值相同，在此即为 "/blog"
+
+		me.add("/boot/postings",PostingsController.class,"/boot/postings");
+		me.add("/boot/doc",DocController.class,"/boot/doc");
+		me.add("/boot/elastic",ElasticController.class,"/boot/elastic");
+		me.add("/boot/query",QueryController.class,"/boot/query");
+		me.add("/boot/queryLog",QueryLogController.class,"/boot/queryLog");
+		me.add("/boot/sort",SortController.class,"/boot/sort");
+		me.add("/boot/token", TokenController.class,"/boot/token");
+		me.add("/boot/topic",TopicController.class,"/boot/topic");
+		me.add("/boot/lion",LionController.class,"/boot/lion");
+		me.add("/boot/cors",CorsController.class,"/boot/cors");
+		me.add("/boot/analyzer",AnalyzerController.class,"/boot/analyzer");
+
+
+
+		me.add("/boot/currencyDex",com.js.cluster.nginx.backserver.controller.CurrencyDexController.class,"/boot/currencyDex");
+		me.add("/boot/currencyInfo",com.js.cluster.nginx.backserver.controller.CurrencyInfoController.class,"/boot/currencyInfo");
+		me.add("/boot/currencyPos",com.js.cluster.nginx.backserver.controller.CurrencyPosController.class,"/boot/currencyPos");
+		me.add("/boot/currencyPrice",com.js.cluster.nginx.backserver.controller.CurrencyPriceController.class,"/boot/currencyPrice");
+
+		//启动索引的定时服务,不应该在这里面执行，应该有个单独的进程
+		//quartzJob();
+		
+//		new Thread(){
+//			public void run() {
+//				try {
+//					quartzJob();
+//					//AppKit.this.start();
+//				} catch (Exception e) {
+//					//log.error("核心程序启动失败", e);
+//					System.out.println("索引进程启动失败");
+//					System.exit(-1);
+//				}
+//			}
+//		}.start();
+	}
+
+	/***
+	 * 定时服务的启动
+	 */
+	private void quartzJob(){
+		try {
+			DataIndexQuartz.quartzJob();
+		} catch (SchedulerException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void configEngine(Engine me) {
+		me.addSharedFunction("/common/_layout.html");
+		me.addSharedFunction("/common/_paginate.html");
+	}
+	
+	/**
+	 * 配置插件
+	 */
+	public void configPlugin(Plugins me) {
+		// 配置 druid 数据库连接池插件
+		DruidPlugin druidPlugin = new DruidPlugin(PropKit.get("jdbcUrl"), PropKit.get("user"), PropKit.get("password").trim());
+		me.add(druidPlugin);
+		
+		// 配置ActiveRecord插件
+		ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
+		// 所有映射在 MappingKit 中自动化搞定
+		_MappingKit.mapping(arp);
+		me.add(arp);
+	}
+	
+	public static DruidPlugin createDruidPlugin() {
+		return new DruidPlugin(PropKit.get("jdbcUrl"), PropKit.get("user"), PropKit.get("password").trim());
+	}
+	
+	/**
+	 * 配置全局拦截器
+	 */
+	public void configInterceptor(Interceptors me) {
+		
+	}
+	
+	/**
+	 * 配置处理器
+	 */
+	public void configHandler(Handlers me) {
+		
+	}
+}

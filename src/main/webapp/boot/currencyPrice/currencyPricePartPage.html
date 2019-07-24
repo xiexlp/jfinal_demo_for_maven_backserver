@@ -1,0 +1,239 @@
+#include("/boot/common/header-common.html")
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="padding: 0px 0 0px 0;">
+            <div class="row">
+                <div class="col-lg-2" style="padding: 5px 0 0px 15px;">
+                    <span style="margin: 20px 0 0 0;padding: 20px 0 0 0;">currencyPrice列表</span>
+                </div>
+                <div class="col-lg-10">
+                    <div class="btn-group pull-right">
+                        <a class="btn btn-primary btn-sm" href="/boot/currencyPrice/currencyPriceadd">
+                            +新增currencyPrice </a>
+                        <a class="btn btn-primary btn-sm" href="/boot/currencyPrice/currencyPrices">
+                            列表currencyPrice </a>
+                        <a class="btn btn-primary btn-sm" href="/boot/currencyPrice/currencyPricePartPage"> 部分属性列表 </a>
+                        <a class="btn btn-primary btn-sm" href="/admin/manu/manulist"> 厂商列表 </a>
+                        <a class="btn btn-primary btn-sm" href="/admin/category/categorylist"> 分类列表 </a>
+                        <a class="btn btn-primary btn-sm" href="/admin/depart/departlist"> 门类列表</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="alert text-center">
+                    #include("/boot/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="pull-right">更新时间:#(priceBatchTimeFormat)</span>
+                </div>
+            </div>
+            <div class="row" style="padding: 0 0 10px 0">
+<!--                <div class="col-lg-2">-->
+<!--                    currencyPriceId-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    currencyId-->
+<!--                </div>-->
+
+                <div class="col-lg-1">
+
+                    #if(sortBy=='rankMarketCap')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=rankMarketCap&sort=1">rankMarketCap</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=rankMarketCap&sort=0">rankMarketCap</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=rankMarketCap&sort=0">rankMarketCap</a>
+                    #end
+                </div>
+
+                <div class="col-lg-2">
+                    #if(sortBy=='name')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=name&sort=1">name</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=name&sort=0">name</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=name&sort=0">name</a>
+                    #end
+
+                </div>
+                <div class="col-lg-1">
+                    #if(sortBy=='symbol')
+                        #if(sort==0)
+                        <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=symbol&sort=1">symbol</a>
+                        #else if(sort==1)
+                        <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=symbol&sort=0">symbol</a>
+                        #end
+                    #else
+                        <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=symbol&sort=0">symbol</a>
+                    #end
+
+                </div>
+                <div class="col-lg-1">
+                    #if(sortBy=='currentPrice')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=currentPrice&sort=1">currentPrice</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=currentPrice&sort=0">currentPrice</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=currentPrice&sort=0">currentPrice</a>
+                    #end
+                </div>
+                <div class="col-lg-1">
+                    #if(sortBy=='priceChange')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=priceChange&sort=1">priceChange</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=priceChange&sort=0">priceChange</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=priceChange&sort=0">priceChange</a>
+                    #end
+                </div>
+<!--                <div class="col-lg-2">-->
+<!--                    dexId-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    dexName-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    createTime-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    updateTime-->
+<!--                </div>-->
+                <div class="col-lg-2">
+                    #if(sortBy=='volume')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=volume&sort=1">volume</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=volume&sort=0">volume</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=volume&sort=0">volume</a>
+                    #end
+                </div>
+                <div class="col-lg-2">
+                    #if(sortBy=='circulatingVolume')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=circulatingVolume&sort=1">circulatingVolume</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=circulatingVolume&sort=0">circulatingVolume</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=circulatingVolume&sort=0">circulatingVolume</a>
+                    #end
+                </div>
+                <div class="col-lg-2">
+                    #if(sortBy=='marketCap')
+                    #if(sort==0)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=marketCap&sort=1">marketCap</a>
+                    #else if(sort==1)
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=marketCap&sort=0">marketCap</a>
+                    #end
+                    #else
+                    <a href="/boot/currencyPrice/currencyPricePartPage?1=1&pageNo=1&sortBy=marketCap&sort=0">marketCap</a>
+                    #end
+                </div>
+
+<!--                <div class="col-lg-2">-->
+<!--                    batchTime-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    infoUrl-->
+<!--                </div>-->
+<!--                <div class="col-lg-3">-->
+<!--                    属性名-->
+<!--                </div>-->
+            </div>
+            <hr/>
+            #for(x:currencyPricelist)
+            <div class="row" style="padding: 5px 0 0 0;">
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.currencyPriceId)-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.currencyId)-->
+<!--                </div>-->
+
+                <div class="col-lg-1">
+                    #(x.rankMarketCap)
+                </div>
+                <div class="col-lg-2">
+                    #(x.name)
+                </div>
+                <div class="col-lg-1">
+
+                    <a href="#(x.infoUrl)" target="_blank"> #(x.symbol)</a>
+                </div>
+                <div class="col-lg-1">
+                    $#(x.currentPrice)
+                </div>
+                <div class="col-lg-1">
+                    #(x.priceChange)%
+                </div>
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.dexId)-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.dexName)-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.createTime)-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.updateTime)-->
+<!--                </div>-->
+                <div class="col-lg-2">
+                    #(x.volume)
+                </div>
+                <div class="col-lg-2">
+                    #(x.circulatingVolume)
+                </div>
+                <div class="col-lg-2">
+                    $#(x.marketCap)
+                </div>
+
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.batchTime)-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    #(x.infoUrl)-->
+<!--                </div>-->
+<!--                <div class="col-lg-3">-->
+<!--                    <a href="/boot/currencyPrice/currencyPriceupdate?currencyPriceId=#(x.currencyPriceId)"-->
+<!--                       class="btn btn-primary btn-sm">修改</a>-->
+<!--                    <a href="/boot/currencyPrice/currencyPrices?currencyPriceId=#(x.currencyPriceId)"-->
+<!--                       class="btn btn-primary btn-sm">权限列表</a>-->
+<!--                    <a href="/boot/currencyPrice/currencyPricePartUpdate?currencyPriceId=#(x.currencyPriceId)"-->
+<!--                       class="btn btn-primary btn-sm">部分修改</a>-->
+<!--                </div>-->
+            </div>
+            <!--<hr/>-->
+            #end
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-lg-2">用户组情况</div>
+                <div class="col-lg-10">
+
+                </div>
+            </div>
+        </div>
+        <div class="alert pull-right">
+            #include("/boot/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+        </div>
+    </div>
+</div>
+

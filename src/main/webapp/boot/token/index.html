@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+#include("../common/header-common.html")
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+                            #include("../common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                <form action="/boot/postings/search" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="query" placeholder="请输入关键字"/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="submit">搜索</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="padding: 0 0 10px 0">
+                        <div class="col-lg-1">
+                            <a href="/token/index?fieldname=token_id&sort=${(sort+1)%2}">tokenId</a>
+
+                            #if(fieldname=="token_id")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="/token/index?fieldname=token&sort=${(sort+1)%2}">token</a>
+
+                            #if(fieldname=="token")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+                        </div>
+
+                        <div class="col-lg-1">
+                            <a href="/token/index?fieldname=token_size&sort=${(sort+1)%2}">tokenSize</a>
+                            #if(fieldname=="token_size")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+                        </div>
+
+                        <div class="col-lg-2">
+                            <a href="/boot/token/index?fieldname=doc_count&sort=#((sort+1)%2)">docCount</a>
+                            #if(fieldname=="doc_count")
+                            <label class="label-success">
+                                #if(sort==0)
+                                <span>升序</span>
+                                #else
+                                <span>降序</span>
+                                #end
+                            </label>
+                            #end
+
+                        </div>
+
+                        <div class="col-lg-2">
+                            docs
+                        </div>
+
+                        <div class="col-lg-3">
+                            属性名
+                        </div>
+                    </div>
+                    <hr/>
+                    #for(x:tokenList)
+                    <div class="row" style="padding: 5px 0 0 0;">
+                        <div class="col-lg-1">
+                            #(x.tokenId)
+                        </div>
+
+                        <div class="col-lg-3">
+                            #(x.token)
+                        </div>
+
+                        <div class="col-lg-1">
+                            #(x.tokenSize)
+                        </div>
+
+                        <div class="col-lg-2">
+                            #(x.docCount)
+                        </div>
+
+                        <div class="col-lg-2">
+                            #(x.docs)
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a href="/admin/board/boardupdate?tokenId=#(x.tokenId)" class="btn btn-primary btn-sm">修改</a>
+                            <a href="/boot/doc/docdetail?tokenId=#(x.tokenId)" class="btn btn-primary btn-sm">详情</a>
+                            <a href="/admin/board/boardedit?tokenId=#(x.tokenId)" class="btn btn-primary btn-sm">规格</a>
+                        </div>
+                    </div>
+                    #end
+                </div>
+                <div class="panel-footer">
+                    <a href="/boot/doc/index" class="btn btn-primary">返回文档列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    搜索管理
+                </div>
+                <div class="panel-body">
+
+                    <form action="/boot/elastic/indexcreate" method="post">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-lg-1">数据表名</label>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" placeholder="" name="tablename"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-1"></label>
+                                <div class="col-lg-3">
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="panel-footer">
+                        panel-footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

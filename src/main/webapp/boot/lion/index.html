@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap-4.1.1/dist/css/bootstrap.css"/>
+    <script src="/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-4.1.1/dist/js/bootstrap.js"/>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+             style="padding: 200px 20px 20px 20px;border: 0px solid #0000ff;">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-3" >
+                    <img src="/img/timg.jpg" class="img-circle" alt="" style="height: 100px;width: 100px;"/> <span style="font-size: 40px">狮子查询</span>
+                </div>
+            </div>
+
+            <form method="post" action="/boot/postings/search">
+            <div class="input-group">
+                <input type="text" name="query" class="form-control" placeholder="请输入您要查询的关键词"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">搜索</button>
+                </span>
+
+            </div>
+            </form>
+
+            <h6>iksearch</h6>
+            <form method="post" action="/boot/postings/iksearch">
+                <div class="input-group">
+                    <input type="text" name="query" class="form-control" placeholder="请输入您要查询的关键词"/>
+                    <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">搜索</button>
+                </span>
+
+                </div>
+            </form>
+
+            <h6>search rest</h6>
+            <form method="post" action="/boot/postings/searchrest">
+                <div class="input-group">
+                    <input type="text" name="query" class="form-control" placeholder="请输入您要查询的关键词"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">搜索</button>
+                </span>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+    <script src="/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-3.3.5/dist/js/bootstrap.js"/>
+</head>
+<body>
+
+#include("../common/header-common.html")
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+
+<div class="panel panel-default">
+        <div class="panel-heading">
+            用户列表排序
+            #include("../common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+        </div>
+        <div class="panel-body">
+          <table class="table table-condensed">
+                <thead>
+                    <th>序号</th>
+                    <th>用户名</th>
+                    <th>年龄</th>
+                </thead>
+                #for(user:userList)
+                <tr class="active">
+                    <td></td>
+                    <td>#(user.userName)</td>
+                    <td>#(user.age)</td>
+                </tr>
+
+                  <!--<tr class="danger">-->
+                      <!--<td>${userLP.index}</td>-->
+                      <!--<td>${user.userName}</td>-->
+                      <!--<td>${user.age}</td>-->
+                  <!--</tr>-->
+                #end
+            </table>
+
+        </div>
+        <div class="panel-footer">
+            panel-footer
+        </div>
+    </div>
+            
+        </div>
+        <div class="col-xs-6"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

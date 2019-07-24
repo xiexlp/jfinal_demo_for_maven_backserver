@@ -1,0 +1,168 @@
+#include("/boot/common/boot_nav.html")
+
+<div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px 0 0px 0;">
+                    <div class="row">
+                        <div class="col-lg-2" style="padding: 5px 0 0px 15px;">
+                            <span style="margin: 20px 0 0 0;padding: 20px 0 0 0;">currencyPos列表</span>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="btn-group pull-right">
+                                <a class="btn btn-primary btn-sm" href="/boot/currencyPos/currencyPosadd"> +新增currencyPos </a>
+                                <a class="btn btn-primary btn-sm" href="/boot/currencyPos/currencyPoss"> 列表currencyPos </a>
+                                <a class="btn btn-primary btn-sm" href="/boot/currencyPos/currencyPosPartPage"> 部分属性列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/manu/manulist"> 厂商列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/category/categorylist"> 分类列表 </a>
+                                <a class="btn btn-primary btn-sm" href="/admin/depart/departlist"> 门类列表</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert text-center">
+                            #include("/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="padding: 0 0 10px 0">
+                                                    <div class="col-lg-2">
+                                currencyPosId
+                            </div>
+                                                    <div class="col-lg-2">
+                                currencyName
+                            </div>
+                                                    <div class="col-lg-2">
+                                symbol
+                            </div>
+                                                    <div class="col-lg-2">
+                                logoUrl
+                            </div>
+                                                    <div class="col-lg-2">
+                                currentPrice
+                            </div>
+                                                    <div class="col-lg-2">
+                                priceChange
+                            </div>
+                                                    <div class="col-lg-2">
+                                volume
+                            </div>
+                                                    <div class="col-lg-2">
+                                marketCap
+                            </div>
+                                                    <div class="col-lg-2">
+                                roi
+                            </div>
+                                                    <div class="col-lg-2">
+                                nodeNum
+                            </div>
+                                                    <div class="col-lg-2">
+                                requiredNum
+                            </div>
+                                                    <div class="col-lg-2">
+                                mnWorth
+                            </div>
+                                                    <div class="col-lg-2">
+                                createTime
+                            </div>
+                                                    <div class="col-lg-2">
+                                updateTime
+                            </div>
+                                                    <div class="col-lg-2">
+                                infoUrl
+                            </div>
+                                                    <div class="col-lg-2">
+                                currencyId
+                            </div>
+                                                    <div class="col-lg-2">
+                                batchTime
+                            </div>
+                                                    <div class="col-lg-2">
+                                detailLink
+                            </div>
+                                                <div class="col-lg-3">
+                            属性名
+                        </div>
+                    </div>
+                    <hr/>
+                    \#for(x:currencyPoslist)
+                    <div class="row" style="padding: 5px 0 0 0;">
+                                                    <div class="col-lg-2">
+                                #(x.currencyPosId)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.currencyName)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.symbol)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.logoUrl)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.currentPrice)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.priceChange)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.volume)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.marketCap)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.roi)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.nodeNum)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.requiredNum)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.mnWorth)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.createTime)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.updateTime)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.infoUrl)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.currencyId)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.batchTime)
+                            </div>
+                                                    <div class="col-lg-2">
+                                #(x.detailLink)
+                            </div>
+                                                <div class="col-lg-3">
+                            <a href="/boot/currencyPos/currencyPosupdate?currencyPosId=#(x.currencyPosId)" class="btn btn-primary btn-sm">修改</a>
+                            <a href="/boot/currencyPos/currencyPoss?currencyPosId=#(x.currencyPosId)" class="btn btn-primary btn-sm">权限列表</a>
+                            <a href="/boot/currencyPos/currencyPosPartUpdate?currencyPosId=#(x.currencyPosId)" class="btn btn-primary btn-sm">部分修改</a>
+                        </div>
+                    </div>
+                    <!--<hr/>-->
+                #end
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-lg-2">用户组情况</div>
+                        <div class="col-lg-10">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="alert pull-right">
+                    #include("/common/pagination-jfinal.html",pageNo=pageNo,pageTotal=pageTotal,pageList=pageList,total=total,toUrl=actionUrl)
+                </div>
+            </div>
+</div>
+
